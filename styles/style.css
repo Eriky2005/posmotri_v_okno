@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.content__card-link_current {
+  background: #545050;
+}
+
 html {
   block-size: 100%;
 }
@@ -54,7 +58,7 @@ ol {
 
 .content__list {
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__details {
@@ -78,7 +82,7 @@ ol {
   object-position: center;
 }
 
-.content__list-item:not(.last-child) {
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -109,7 +113,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -120,7 +124,7 @@ ol {
 .title {
   width: 260px;
   height: 210px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -141,17 +145,20 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -170,7 +177,9 @@ ol {
 }
 
 .search-form__fieldset {
+  display: grid;
   border: 0;
+  gap: 7px;
 }
 
 .search-form__label {
@@ -178,6 +187,7 @@ ol {
   width: fit-content;
   flex-direction: row;
   align-items: center;
+  gap: 5px;
 }
 
 .button {
@@ -189,7 +199,7 @@ ol {
   height: 34px;
   justify-content: center;
   align-items: center;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -213,7 +223,7 @@ ol {
   border-width: 1px 0px;
   border-style: solid;
   border-color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
