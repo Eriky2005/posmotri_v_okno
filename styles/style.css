@@ -72,7 +72,8 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -102,10 +103,6 @@ ol {
   flex-grow: 1;
   flex-basis: 0;
   overflow: hidden;
-}
-
-.result__video-container {
-  position: relative;
 }
 
 .content__list {
@@ -155,6 +152,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
@@ -179,7 +177,7 @@ ol {
 .search-form__fieldset {
   display: grid;
   border: 0;
-  gap: 7px;
+  gap: 5px;
 }
 
 .search-form__label {
